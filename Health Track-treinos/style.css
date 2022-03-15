@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body a {
+    outline: none;
+}
+
+header {
+    background-color: #F8AB65;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: calc(1rem + 3.0vw);
+}
+
+
+nav img {
+    display: none;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-link {
+    font-size: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+
+
+main {
+    background-color:  #575050;
+    padding: 70px 0 132px 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+section {
+    width: 60%;
+    min-width: 250px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.info-mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-halter {
+    width: 20%;
+    margin-bottom: 20px;
+}
+
+.info-mid p{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.info-mid button {
+    width: 40%;
+    padding: 10px 0;
+    background-color: #C4C4C4;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.info-mid button:hover {
+    opacity: 0.8;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F8AB65;
+}
+
+footer div {
+    display: flex;
+}
+
+.info-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 40px 8px 40px;
+    cursor: pointer;
+}
+
+
+.info-footer:hover p, .info-footer a:hover {
+    color: white;
+}
+
+
+
+.info-footer img {
+    width: 35px;
+    margin-bottom: 12px;
+}
+
+.info-footer a {
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+    text-decoration: none;
+    color: black;
+}
+
+.info-footer p
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.1s;
+}
+
+
+
+
+@media(max-width:765px) {
+
+    .nav-list {
+        display: none;
+    }
+
+    nav img {
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+        width: 35px;
+    }
+
+
+    .info-mid img{
+        width: 40%;
+    }
+
+    .info-mid button {
+        width: 100%;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
